@@ -6,8 +6,16 @@ Spring容器实例化bean过程中，执行bean的构造方法后，可以通过
 >* @PostConstruct注解指定初始化方法。
 >* Java类实现InitailztingBean接口。
 
-构造方法、InitializingBean、BeanPostProcessor的执行顺序：  
-`构造方法-->BeanPostProcessor的postProcessorBeforeInitailization方法-->InitializingBean-->bean中的init-method-->BeanPostProcessor的postProcessAfterInitialization方法`
+bean的初始化、销毁几种实现方式的执行顺序：  
+>1. 反射机制创建实例。
+>2. BeanPostProcessor的`postProcessorBeforeInitailization()`方法。
+>3. `@PostConstruct`注解的方法。
+>4. InitializingBean接口的`afterPropertiesSet()`方法。
+>5. xml中bean标签的`init-method`属性。
+>6. BeanPostProcessor的`postProcessAfterInitialization()`方法。
+>7. `@PreDestroy`注解的方法。
+>8. DisposableBean接口的`destroy()`方法。
+>9. xml中bean标签的`destroy-method`属性。
 
 ### BeanPostProcessor API
 ````Java
