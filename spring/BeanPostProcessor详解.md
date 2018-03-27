@@ -7,7 +7,7 @@ Spring容器实例化bean过程中，执行bean的构造方法后，可以通过
 >* Java类实现InitailztingBean接口。
 
 构造方法、InitializingBean、BeanPostProcessor的执行顺序：  
-`构造方法-->BeanPostProcessor-->InitializingBean-->bean中的初始化方法。`
+`构造方法-->BeanPostProcessor的postProcessorBeforeInitailization方法-->InitializingBean-->bean中的init-method-->BeanPostProcessor的postProcessAfterInitialization方法`
 
 ### BeanPostProcessor API
 ````Java
