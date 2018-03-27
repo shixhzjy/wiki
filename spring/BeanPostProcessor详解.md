@@ -119,7 +119,7 @@ PostProcessorB后置处理器执行postProcessAfterInitialization
 **注意:`BeanPostProcessor`接口中`postProcessBeforeInitialization`、`postProcessAfterInitialization`两个方法都不能返回`null`。</br>
 如果返回`null`，那么在后续执行显示的初始化方法时将报空指针异常，或者通过`getBean()`方法获取不到bena实例对象。因为后置处理器从Spring IoC容器中取出bean实例对象没有再次放回IoC容器中。**
 
-**指定后置处理器调用顺序**
+**指定后置处理器调用顺序**  
 在Spring机制中可以指定后置处理器调用顺序，让BeanPostProcessor接口的实现类也实现`Ordered`接口的`getOrder()`方法。该方法返回一整数，默认值为`0`，优先级最高，值越大优先级越低。</br>
 ````Java
 public class PostProcessor implements BeanPostProcessor, Ordered {
