@@ -16,6 +16,7 @@ bean的初始化、销毁几种实现方式的执行顺序：  
 >7. `@PreDestroy`注解的方法。
 >8. DisposableBean接口的`destroy()`方法。
 >9. xml中bean标签的`destroy-method`属性。
+
 参考：[Spring核心技术（六）——Spring中Bean的生命周期](https://blog.csdn.net/EthanWhite/article/details/51533299)、[Spring Bean的生命周期](https://www.cnblogs.com/redcool/p/6397398.html)
 
 ### BeanPostProcessor API
