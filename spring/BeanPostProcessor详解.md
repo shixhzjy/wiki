@@ -175,3 +175,6 @@ PostProcessor后置处理器执行postProcessBeforeInitialization
 PostProcessorB后置处理器执行postProcessAfterInitialization
 PostProcessor后置处理器执行postProcessAfterInitialization
 ````
+
+[参考：https://www.cnblogs.com/sishang/p/6576665.html](https://www.cnblogs.com/sishang/p/6576665.html)</br>
+BeanPostProcessor与自定义注解、动态代理结合的实战用法，详见：[https://www.jianshu.com/p/1417eefd2ab1](https://www.jianshu.com/p/1417eefd2ab1)
