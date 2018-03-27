@@ -1,7 +1,7 @@
 ### BeanPostProcessor的简介
 BeanPostProcessor，Bean的后置处理器。在Spring创建每一个Bean的过程中，都会执行`BeanPostProcessor`的实现类。  
 Spring容器实例化bean过程中，执行bean的构造方法后，可以通过定义一个或多个`BeanPostProcessor`接口的实现类，在执行显示的初始化方法之前与后添加自定义逻辑。
->`显示的初始化方法方式有：`
+>**显示的初始化方法方式有：**
 >* 配置文件中bean标签添加init-method属性指定Java类中初始化方法。
 >* @PostConstruct注解指定初始化方法。
 >* Java类实现InitailztingBean接口。
