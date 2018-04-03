@@ -1,3 +1,6 @@
+*需求：*</br>
+日志一般是按天记录到一个文件内，但有时想把某需求的日志单独记录到一个文件，方便查看。
+
 logback.xml
 ````xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,3 +89,4 @@ public class Test {
     }
 }
 ````
+结果：大部分日志记录到celltower.log文件中，通过`batchRequestOpenTimesLogger`打印的日志记录到`batchRequestOpenTimes.log`文件中。
