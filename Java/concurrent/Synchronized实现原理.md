@@ -83,7 +83,7 @@ public class Obj {
 ### 重量级锁
 synchronized的重量级锁是通过对象内部的一个叫做监视器锁（monitor）来实现的，监视器锁本质又是依赖于底层的操作系统的Mutex Lock（互斥锁）来实现的。而操作系统实现线程之间的切换需要从用户态转换到核心态，这个成本非常高，状态之间的转换需要相对比较长的时间，这就是为什么synchronized效率低的原因。</br>
 当锁被膨胀为重量级锁后，锁标识位会被设置成10，同时对象头会指向一个monitor对象，它会管理协调这些竞争锁资源的线程们。大致示意图如下：</br>
-![]()
+![syncronized原理示意图](https://github.com/shixhzjy/wiki/blob/master/Java/concurrent/imgs/syncronized原理示意图.jpg?raw=true)
 *流程如下：*</br>
 1. 如果线程A执行Obj对象的同步方法，通过对象头查找到Monitor的位置，然后线程A会进入WaitQueue区域，该区域主要是用于存储所有竞争锁资源的线程，多个线程同时竞争锁资源，只会有一个线程竞争成功，其它线程就会存储到该区域中，该区域主要维护两个队列：
 >* Contention List：所有请求锁的线程将被首先放置到该竞争队列中。
