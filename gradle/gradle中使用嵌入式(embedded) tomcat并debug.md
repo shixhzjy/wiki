@@ -42,7 +42,7 @@ gradle视图中就出现下图中的task：</br>
 3. 以run运行tomcatRun task，如图：![Run-tomcatRun](https://github.com/shixhzjy/wiki/blob/master/gradle/imgs/Run-tomcatRun.jpg?raw=true)
 4. 以debug运行remote的debug task，![Debug-remote_debug](https://github.com/shixhzjy/wiki/blob/master/gradle/imgs/Debug-remote_debug.jpg?raw=true)
 
-注：若要debug spring容器启动过程，不要等步骤3完成后再执行步骤4，可以在步骤3启动过程中就执行步骤4。
+注：若要debug spring容器启动过程，不要等步骤3完成后再执行步骤4，在执行步骤3后立即执行步骤4。
 
 关于tomcat的版本及相关配置参考[https://github.com/bmuschko/gradle-tomcat-plugin/blob/master/README.md](https://github.com/bmuschko/gradle-tomcat-plugin/blob/master/README.md)</br>
 Gradle properties[https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_configuration_properties](https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_configuration_properties)
