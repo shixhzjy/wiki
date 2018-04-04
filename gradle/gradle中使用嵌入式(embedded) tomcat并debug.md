@@ -37,9 +37,9 @@ gradle视图中就出现下图中的task：</br>
 ### 进入debug模式
 关键参数：`-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005`。</br>
 步骤：</br>
-1. 编辑tomcatRun的VM options，如图：![]()
-2. 添加remote，如图：![]()
-3. 先以run运行tomcatRun task，再以debug运行remote的debug task，如图：![]()![]()
+1. 编辑tomcatRun的VM options，如图：![tomcatRun参数](https://github.com/shixhzjy/wiki/blob/master/gradle/imgs/edit-tomcatRun-configurations.jpg?raw=true)
+2. 添加remote，如图：![remote-debug](https://github.com/shixhzjy/wiki/blob/master/gradle/imgs/remote-debug.jpg?raw=true)
+3. 先以run运行tomcatRun task，再以debug运行remote的debug task，如图：![Run-tomcatRun](https://github.com/shixhzjy/wiki/blob/master/gradle/imgs/Run-tomcatRun.jpg?raw=true)![Debug-remote_debug](https://github.com/shixhzjy/wiki/blob/master/gradle/imgs/Debug-remote_debug.jpg?raw=true)
 
 关于tomcat的版本及相关配置参考[https://github.com/bmuschko/gradle-tomcat-plugin/blob/master/README.md](https://github.com/bmuschko/gradle-tomcat-plugin/blob/master/README.md)</br>
 Gradle properties[https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_configuration_properties](https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_configuration_properties)
