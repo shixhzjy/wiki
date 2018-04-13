@@ -65,5 +65,6 @@ export JAVA_HOME
 
 
 参考：</br>
+[消息队列学习 一 ------ rocketmq启动nameserver异常解决](https://blog.csdn.net/mingtian625/article/details/49307189)</br>
 [linux中shell脚本设置环境变量](http://blog.sina.com.cn/s/blog_623630d50102vdyk.html)</br>
 [Linux中profile、bashrc、bash_profile之间的区别和联系](https://blog.csdn.net/chenchong08/article/details/7833242)
