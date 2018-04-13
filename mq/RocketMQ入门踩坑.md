@@ -1,5 +1,5 @@
 ### 系统环境
-rocketmq-4.2.0
+rocketmq-4.2.0</br>
 Mac OS
 
 ### 解决启动NameServer时报缺少JAVA_HOME异常
